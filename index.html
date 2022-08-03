@@ -9,12 +9,9 @@
 </head>
 <body>
     <h1>Etch-a-Sketch</h1>
-    <!-- Populate 16 grid divs via JS-->
-    <!-- 16 is default, but should also take user input for size, max 100 -->
-    <!-- user input should be a button that has a popup for # -->
-    <!-- Generating more squares doesn't change gridS div size, 
-        makes grid divs smaller/larger -->
-    <!-- Add hover styling to grid divs (shouldn't be too)-->
+    <p>How Big Do You Want Your Etch-a-Sketch?</p>
+    <input type="number" id="cellQuantity" name="quantity" value="16">
+    <button onclick="createCanvas()"> Build! </button>
     <div id="grid">
     </div>
     <script src="app.js"></script>
