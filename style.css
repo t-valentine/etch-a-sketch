@@ -1,0 +1,9 @@
+#grids {
+    border: 5px solid black;
+    height: 65vh;
+    width: 65vh;
+}
+
+.grid {
+    border: 1px solid grey;
+}
