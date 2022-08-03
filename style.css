@@ -1,9 +1,16 @@
-#grids {
+#grid {
+    background-color: grey;
     border: 5px solid black;
-    height: 65vh;
-    width: 65vh;
+    display: flex;
+    flex: auto;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 1px;
+    height: 500px;
+    width: 500px;
+    
 }
 
-.grid {
-    border: 1px solid grey;
+.cell {
+    background-color: white; 
 }
