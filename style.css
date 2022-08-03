@@ -1,16 +1,14 @@
 #grid {
-    background-color: grey;
     border: 5px solid black;
     display: flex;
     flex: auto;
     flex-flow: row wrap;
     justify-content: center;
-    gap: 1px;
     height: 500px;
     width: 500px;
     
 }
 
 .cell {
-    background-color: white; 
+    background-color: rgb(223, 220, 219); 
 }
