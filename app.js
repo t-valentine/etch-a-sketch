@@ -19,37 +19,25 @@ addEventListener('load', (event) => {
     generateGrid(originalGrid * originalGrid);
 });
 
-const createError = (error) => {
-    const errordiv = document.getElementById('errors');
-    errordiv.innerHTML = '';
-    const p = document.createElement("p");
-    p.innerHTML = error;
-    errordiv.append(p);
-}
-
 const createCanvas = () => {
     document.getElementById('grid').innerHTML = '';
     const quantity = document.getElementById('cellQuantity').value;
     var regex = /[0-9]|\./;
     if (regex.test(quantity)){
         if (quantity <= 0) {
-            createError("the size has to be bigger than 0!");
-            console.log("the size has to be bigger than 0!");
+            window.alert("the size has to be bigger than 0!");
             generateGrid(256);
         }
         else if (quantity > 100) {
-            createError("the size has to be smaller than 100");
-            console.log("the size has to be smaller than 100");
+            window.alert("the size has to be smaller than 100");
             generateGrid(256);
         }
         else {
-            createError("");
             generateGrid(quantity * quantity);
         };
     }
     else {
-        createError('Please enter a numerical value');
-        console.log('Please enter a numerical value');
+        window.alert('Please enter a numerical value');
         generateGrid(256);
     }
 

@@ -8,13 +8,28 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>Etch-a-Sketch</h1>
-    <p>How Big Do You Want Your Etch-a-Sketch?</p>
-    <input type="number" id="cellQuantity" name="quantity" value="16">
-    <button onclick="createCanvas()"> Build! </button>
-    <div id="errors"></div>
-    <div id="grid">
+    <div class="container">
+        <div class="frame">
+            <div id="grid"></div>
+            
+            <div class="column">
+                <span class="dot"></span>
+                <h1>Etch-a-Sketch</h1>
+                <span class="dot"></span>
+            </div>
+        </div>
+        <div class="column">
+            <div class="container">
+                <h3>How Big Do You Want Your Etch-a-Sketch?</h3>
+                <div>
+                    <input type="number" id="cellQuantity" name="quantity" value="16">
+                    <button class="build" onclick="createCanvas()"> Build! </button>
+                </div>
+            </div>
+            <button class="clear" onclick="createCanvas()"> Clear Etch-a-Sketch </button>
+        </div>
     </div>
+
     <script src="app.js"></script>
 </body>
 </html>
